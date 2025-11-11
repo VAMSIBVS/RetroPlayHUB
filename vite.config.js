@@ -10,4 +10,9 @@ export default defineConfig({
       },
     }),
   ],
+  base: '/RetroPlayHUB/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
 })
