@@ -1,3 +1,6 @@
+// Import the utility function
+import { getAssetPath } from './utils';
+
 // GBA Emulator using EmulatorJS (local)
 class GBAEmulator {
   constructor(canvas, system = 'gba') {
@@ -26,14 +29,14 @@ class GBAEmulator {
         if (!document.querySelector('link[data-emulatorjs]')) {
           const cssLink = document.createElement('link');
           cssLink.rel = 'stylesheet';
-          cssLink.href = '/data/emulator.min.css';
+          cssLink.href = getAssetPath('data/emulator.min.css');
           cssLink.setAttribute('data-emulatorjs', '');
           head.appendChild(cssLink);
         }
 
         // Inject script
         const script = document.createElement('script');
-        script.src = '/data/emulator.min.js';
+        script.src = getAssetPath('data/emulator.min.js');
         script.async = true;
         script.setAttribute('data-emulatorjs', '');
         script.onload = () => {
@@ -92,7 +95,7 @@ class GBAEmulator {
         system: this.system,
         gameName: `${this.system.toUpperCase()} Game`,
         gameUrl: blobUrl,
-        dataPath: '/data/',
+        dataPath: getAssetPath('data/'),
         biosUrl: '',
         startOnLoad: true,
         color: '#06b6d4'
