@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react'
-import GBAEmulator from '../lib/gba-emulator'
+import SimpleGamePlayer from '../lib/simple-game-player'
 
 // Game-specific details
 const getGameDetails = (gameTitle) => {
@@ -154,7 +154,7 @@ export default function PlayerPage({ navigate, game }) {
   if (currentGame.console === 'NES') system = 'nes';
   if (currentGame.console === 'SegaCD') system = 'segaCD';
   if (currentGame.console === 'NDS') system = 'nds'; // Placeholder mapping for Nintendo DS
-        emulatorRef.current = new GBAEmulator(canvasRef.current, system);
+        emulatorRef.current = new SimpleGamePlayer(canvasRef.current, system);
         emulatorRef.current.loadROM(romData);
         emulatorRef.current.start();
         console.log('Emulator started successfully!');
