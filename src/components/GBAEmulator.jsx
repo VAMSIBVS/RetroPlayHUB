@@ -6,6 +6,14 @@ export default function GBAEmulator({ romPath, onError, onLoad }) {
   const [error, setError] = useState(null)
 
   useEffect(() => {
+    // Prevent arrow key scrolling when emulator is active
+    const handleKeyDown = (event) => {
+      if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)) {
+        event.preventDefault();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown, { passive: false });
+
     if (!romPath || !canvasRef.current) return
 
     let mounted = true
@@ -46,6 +54,7 @@ export default function GBAEmulator({ romPath, onError, onLoad }) {
 
     return () => {
       mounted = false
+      window.removeEventListener("keydown", handleKeyDown);
       // Cleanup emulator if needed
     }
   }, [romPath, onError, onLoad])
