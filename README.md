@@ -28,16 +28,6 @@ Check out the live RetroPlay Hub here: [RetroPlayHUB](https://retroplayhub.netli
 - **Git & GitHub**: Version control and collaboration
 - **Netlify**: Cloud deployment and CI/CD
 
-## Resume Highlights 💼
-
-- Built a full-stack web retro gaming platform from scratch
-- Integrated multiple emulation cores using WebAssembly
-- Implemented gamepad/controller support for browser games
-- Designed a modern, responsive UI with Tailwind CSS
-- Automated deployment with Netlify and GitHub Actions
-- Experience with asset management, large file handling (Git LFS)
-- Focused on accessibility and cross-browser compatibility
-
 ## Supported File Formats
 
 - **Game Boy Advance**: .gba
