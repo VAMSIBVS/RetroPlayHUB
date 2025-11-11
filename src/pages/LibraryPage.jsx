@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import GameCard from '../components/GameCard'
+import { getAssetPath } from '../lib/utils'
 
 // LibraryPage: filterable list of games by console.
 export default function LibraryPage({ navigate, favorites, toggleFavorite, onPlayGame, defaultFilter = 'ALL' }) {
@@ -11,14 +12,14 @@ export default function LibraryPage({ navigate, favorites, toggleFavorite, onPla
   const consoles = defaultFilter === 'FAVORITES' ? ['FAVORITES'] : ['ALL', 'FAVORITES', 'GBA', 'NES', 'NDS', 'SegaCD']
 
   const allGames = [
-    { id: 1, title: 'Pokemon FireRed', console: 'GBA', year: 2004, thumbnail: '🔥', thumbnailImage: '/thumbnails/pokemon_firered.jpg', romPath: '/roms/pokemon_firered.gba' },
-    { id: 3, title: 'Pokemon Ruby', console: 'GBA', year: 2002, thumbnail: '💎', thumbnailImage: '/thumbnails/pokemon_ruby.jpg', romPath: '/roms/pokemon_ruby.gba' },
-    { id: 4, title: 'Pokemon Sapphire', console: 'GBA', year: 2002, thumbnail: '💙', thumbnailImage: '/thumbnails/pokemon_sapphire.jpg', romPath: '/roms/pokemon_sapphire.gba' },
-    { id: 5, title: 'Pokemon Emerald', console: 'GBA', year: 2004, thumbnail: '💚', thumbnailImage: '/thumbnails/pokemon_emerald.jpg', romPath: '/roms/pokemon_emerald.gba' },
-    { id: 6, title: 'Mario Kart: Super Circuit', console: 'GBA', year: 2001, thumbnail: '🏎️', thumbnailImage: '/thumbnails/mariokart_supercircuit.jpg', romPath: '/roms/mariokart_supercircuit.gba' },
-    { id: 7, title: 'Pac-Man (Namco)', console: 'NES', year: 1984, thumbnail: '🟡', thumbnailImage: '/thumbnails/pacman.jpeg', romPath: '/roms/pacman.nes' },
-    { id: 8, title: 'Sonic 3D Blast', console: 'SegaCD', year: 1996, thumbnail: '🦔', thumbnailImage: '/thumbnails/sonic3dblast.jpg', romPath: '/roms/sonic3dblast/Sonic 3D Blast (USA).cue' },
-    { id: 9, title: 'Pokemon: Platinum Version', console: 'NDS', year: 2008, thumbnail: '💿', thumbnailImage: '/thumbnails/pokemon_platinum.jpg', romPath: '/roms/pokemon_platinum.nds' }
+    { id: 1, title: 'Pokemon FireRed', console: 'GBA', year: 2004, thumbnail: '🔥', thumbnailImage: getAssetPath('thumbnails/pokemon_firered.jpg'), romPath: getAssetPath('roms/pokemon_firered.gba') },
+    { id: 3, title: 'Pokemon Ruby', console: 'GBA', year: 2002, thumbnail: '💎', thumbnailImage: getAssetPath('thumbnails/pokemon_ruby.jpg'), romPath: getAssetPath('roms/pokemon_ruby.gba') },
+    { id: 4, title: 'Pokemon Sapphire', console: 'GBA', year: 2002, thumbnail: '💙', thumbnailImage: getAssetPath('thumbnails/pokemon_sapphire.jpg'), romPath: getAssetPath('roms/pokemon_sapphire.gba') },
+    { id: 5, title: 'Pokemon Emerald', console: 'GBA', year: 2004, thumbnail: '💚', thumbnailImage: getAssetPath('thumbnails/pokemon_emerald.jpg'), romPath: getAssetPath('roms/pokemon_emerald.gba') },
+    { id: 6, title: 'Mario Kart: Super Circuit', console: 'GBA', year: 2001, thumbnail: '🏎️', thumbnailImage: getAssetPath('thumbnails/mariokart_supercircuit.jpg'), romPath: getAssetPath('roms/mariokart_supercircuit.gba') },
+    { id: 7, title: 'Pac-Man (Namco)', console: 'NES', year: 1984, thumbnail: '🟡', thumbnailImage: getAssetPath('thumbnails/pacman.jpeg'), romPath: getAssetPath('roms/pacman.nes') },
+    { id: 8, title: 'Sonic 3D Blast', console: 'SegaCD', year: 1996, thumbnail: '🦔', thumbnailImage: getAssetPath('thumbnails/sonic3dblast.jpg'), romPath: getAssetPath('roms/sonic3dblast/Sonic 3D Blast (USA).cue') },
+    { id: 9, title: 'Pokemon: Platinum Version', console: 'NDS', year: 2008, thumbnail: '💿', thumbnailImage: getAssetPath('thumbnails/pokemon_platinum.jpg'), romPath: getAssetPath('roms/pokemon_platinum.nds') }
   ]
 
   // Compose filters: console/favorites -> search -> sort

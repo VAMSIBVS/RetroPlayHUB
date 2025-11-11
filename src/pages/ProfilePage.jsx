@@ -3,6 +3,7 @@ import GameCard from '../components/GameCard'
 import StatCard from '../components/StatCard'
 import QuickActions from '../components/QuickActions'
 import RecentGames from '../components/RecentGames'
+import { getAssetPath } from '../lib/utils'
 import FavoritesShowcase from '../components/FavoritesShowcase'
 import ProfileSettings from '../components/ProfileSettings'
 import ProfileCustomization from '../components/ProfileCustomization'
@@ -45,10 +46,10 @@ export default function ProfilePage({ navigate, favorites, onPlayGame, lastPlaye
   }
   // Lightweight catalog to resolve favorite IDs to game objects
   const catalog = [
-    { id: 1, title: 'Pokemon FireRed', console: 'GBA', year: 2004, thumbnail: '🔥', romPath: '/roms/pokemon_firered.gba' },
-    { id: 3, title: 'Pokemon Ruby', console: 'GBA', year: 2002, thumbnail: '💎', romPath: '/roms/pokemon_ruby.gba' },
-    { id: 4, title: 'Pokemon Sapphire', console: 'GBA', year: 2002, thumbnail: '�', romPath: '/roms/pokemon_sapphire.gba' },
-    { id: 5, title: 'Pokemon Emerald', console: 'GBA', year: 2004, thumbnail: '💚', romPath: '/roms/pokemon_emerald.gba' }
+    { id: 1, title: 'Pokemon FireRed', console: 'GBA', year: 2004, thumbnail: '🔥', romPath: getAssetPath('roms/pokemon_firered.gba') },
+    { id: 3, title: 'Pokemon Ruby', console: 'GBA', year: 2002, thumbnail: '💎', romPath: getAssetPath('roms/pokemon_ruby.gba') },
+    { id: 4, title: 'Pokemon Sapphire', console: 'GBA', year: 2002, thumbnail: '💙', romPath: getAssetPath('roms/pokemon_sapphire.gba') },
+    { id: 5, title: 'Pokemon Emerald', console: 'GBA', year: 2004, thumbnail: '💚', romPath: getAssetPath('roms/pokemon_emerald.gba') }
   ]
 
   // Compute sessions from play history
