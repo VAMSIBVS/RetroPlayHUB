@@ -5,6 +5,13 @@ export default function GBAEmulator({ romPath, onError, onLoad }) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
+  // Auto-focus canvas when loaded
+  useEffect(() => {
+    if (canvasRef.current) {
+      canvasRef.current.focus();
+    }
+  }, []);
+
   useEffect(() => {
     // Prevent arrow key scrolling when emulator is active
     const handleKeyDown = (event) => {
@@ -99,10 +106,5 @@ export default function GBAEmulator({ romPath, onError, onLoad }) {
       />
     </div>
   )
-// Auto-focus canvas when loaded
-useEffect(() => {
-  if (canvasRef.current) {
-    canvasRef.current.focus();
-  }
-}, []);
+}
 }
