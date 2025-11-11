@@ -1,18 +1,121 @@
-# React + Vite
+# RetroPlay Hub 🎮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web-based retro gaming platform that brings classic games to your browser. Built with React, Vite, and powered by RetroArch emulation cores.
 
-Currently, two official plugins are available:
+## Features ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Multi-System Support**: Play games from various retro consoles (GBA, NES, SNES, N64, PlayStation, and more)
+- **Modern UI**: Clean, responsive interface with Tailwind CSS
+- **Game Library**: Organized game collection with thumbnails and metadata
+- **Save States**: Save and load game progress
+- **Gamepad Support**: Full controller support for authentic gaming experience
+- **Profile System**: Track achievements, recent games, and favorites
 
-## React Compiler
+## Tech Stack 🛠️
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Frontend**: React 18 + Vite
+- **Styling**: Tailwind CSS
+- **Emulation**: RetroArch WebAssembly cores
+- **Build Tool**: Vite with HMR
 
-Note: This will impact Vite dev & build performances.
+## Installation 🚀
 
-## Expanding the ESLint configuration
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/DShivam9/RetroPlayHUB.git
+   cd RetroPlayHUB
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Add ROM files** (See ROM Setup section below)
+
+4. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## ROM Setup 📁
+
+**Important**: ROM files are not included in this repository due to copyright restrictions and file size limitations.
+
+### Adding Your Own ROMs
+
+1. Create the ROM directory structure:
+   ```
+   public/roms/
+   ```
+
+2. Add your legally obtained ROM files to the appropriate folders:
+   ```
+   public/roms/
+   ├── game1.gba
+   ├── game2.nes
+   ├── game3.snes
+   └── ...
+   ```
+
+3. Add corresponding thumbnail images:
+   ```
+   public/thumbnails/
+   ├── game1.jpg
+   ├── game2.jpg
+   └── ...
+   ```
+
+### Supported File Formats
+
+- **Game Boy Advance**: .gba
+- **Nintendo Entertainment System**: .nes
+- **Super Nintendo**: .snes, .smc
+- **Nintendo 64**: .n64, .z64
+- **PlayStation**: .bin/.cue, .iso
+- **Nintendo DS**: .nds
+- **And many more!**
+
+### Legal Notice ⚖️
+
+- Only use ROM files that you legally own
+- This project is for educational and preservation purposes
+- Respect copyright laws in your jurisdiction
+
+## Project Structure 📂
+
+```
+RetroPlayHUB/
+├── public/
+│   ├── data/           # Emulator cores and configurations
+│   ├── roms/           # Game ROM files (not included)
+│   └── thumbnails/     # Game thumbnail images
+├── src/
+│   ├── components/     # React components
+│   ├── pages/          # Page components
+│   ├── lib/            # Utility libraries
+│   └── assets/         # Static assets
+└── ...
+```
+
+## Contributing 🤝
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## License 📄
+
+This project is for educational purposes. Please respect all applicable laws and copyrights.
+
+## Acknowledgments 🙏
+
+- RetroArch team for the emulation cores
+- React and Vite communities
+- All contributors to open-source emulation
