@@ -1,59 +1,72 @@
-<h1 align="center">Hi, I'm Shivam Diwan</h1>
+# 🎮 RetroPlay Hub  
+
+**A modern web-based retro gaming platform** that revives the classics — right in your browser.  
+Built with **React**, **Vite**, and powered by **RetroArch WebAssembly Cores** for seamless emulation.
 
 ---
 
-### 👨‍💻 About Me  
-I’m a front-end developer passionate about building **modern, responsive, and user-focused web applications**.  
-I enjoy crafting interfaces that are both functional and visually engaging, with a focus on **clean design, performance, and smooth user interaction**.  
-Currently, I’m exploring advanced JavaScript techniques, React development, and UI/UX-driven design.  
+## 🌟 Key Features  
+
+- 🎮 **Multi-System Support** – Play titles from GBA, NES, SNES, N64, PlayStation, and more.  
+- 💾 **Save States** – Save and resume your progress anytime.  
+- 🕹️ **Gamepad Compatibility** – Enjoy full controller support for authentic gameplay.  
+- 🧭 **Modern UI** – Clean, responsive design built with Tailwind CSS.  
+- 🗂️ **Game Library** – Browse and organize your favorite titles with thumbnails and metadata.  
+- 👤 **Player Profiles** – Track achievements, recent sessions, and favorites.  
+- ⚡ **Offline Support** – Service workers enable smooth gameplay even without internet.  
 
 ---
 
-### ⚙️ Tech Stack  
-| Category | Technologies |
-|-----------|--------------|
-| **Frontend** | ReactJS, TailwindCSS, HTML, CSS, JavaScript |
-| **Backend (Basics)** | Python, MySQL, NodeJS |
-| **Tools** | Git, GitHub, VS Code, Figma |
+## 🚀 Live Demo  
+
+🔗 [**Play Now on RetroPlay Hub**](https://retroplayhub.netlify.app/)  
 
 ---
 
-### 📂 Featured Projects  
+## 🧩 Tech Stack  
 
-#### [RetroPlay Hub](https://retroplayhub.netlify.app/)
-A modern web-based **retro gaming platform** that allows users to play classic games directly in the browser.  
-Features include multi-system support, a clean interface, and an integrated emulation setup for nostalgic gameplay.  
-**Tech Used:** ReactJS, Vite, TailwindCSS, RetroArch Cores, JavaScript  
-
-#### [WeatherEye](https://dshivam9.github.io/WeatherEye/)
-A real-time weather web app that provides accurate weather data with dynamic themes, dark mode, and animated visuals.  
-**Tech Used:** HTML, CSS, JavaScript, OpenWeatherMap API  
-
-#### [OSCORP Landing Page](https://dshivam9.github.io/Immersive-Landing-Page/)
-An immersive 3D landing page featuring smooth scrolling and interactive motion design using Spline.  
-**Tech Used:** HTML, CSS, JavaScript, Spline  
-
----
-
-### 📊 GitHub Insights  
-
-<p align="center">
-  <a href="https://github.com/DShivam9">
-    <img src="https://github-readme-stats.vercel.app/api?username=DShivam9&show_icons=true&theme=transparent&hide_border=true&rank_icon=github" width="49%" />
-  </a>
-  <a href="https://github.com/DShivam9?tab=repositories">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DShivam9&layout=compact&theme=transparent&hide_border=true&langs_count=6&card_width=400" width="49%" />
-  </a>
-</p>
+| Technology | Description |
+|-------------|-------------|
+| **React 18** | Modern UI framework for building dynamic interfaces |
+| **Vite** | Lightning-fast build tool with hot module replacement |
+| **Tailwind CSS** | Utility-first CSS for rapid, responsive design |
+| **RetroArch Cores (WASM)** | High-performance browser-based emulation |
+| **JavaScript (ES6+)** | Modern scripting with async capabilities |
+| **HTML5 Canvas** | Pixel-perfect rendering of retro visuals |
+| **Service Workers** | Offline caching and optimized performance |
+| **Netlify** | Continuous deployment and hosting |
+| **Git & GitHub** | Version control and collaboration |
 
 ---
 
-### 📫 Connect With Me  
-- **Email:** [shivamdiwan1500@gmail.com](mailto:shivamdiwan1500@gmail.com)  
-- **LinkedIn:** [linkedin.com/in/shivam-diwan](https://www.linkedin.com/in/shivam-diwan/)  
+## 🎮 Supported File Formats  
+
+| Console | Supported Extensions |
+|----------|----------------------|
+| **Game Boy Advance (GBA)** | `.gba` |
+| **Nintendo Entertainment System (NES)** | `.nes` |
+| **Super Nintendo (SNES)** | `.snes`, `.smc` |
+| **Nintendo 64 (N64)** | `.n64`, `.z64` |
+| **PlayStation (PS1)** | `.bin/.cue`, `.iso` |
+| **Nintendo DS (NDS)** | `.nds` |
+| **And More!** | Ongoing support for additional retro systems |
 
 ---
 
-<p align="center">
-  <i>"Building web experiences that connect design with logic."</i>
-</p>
+## Contributing 🤝
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+
+## License 📄
+
+This project is for educational purposes. Please respect all applicable laws and copyrights.
+
+## Acknowledgments 🙏
+
+- RetroArch team for the emulation cores
+- React and Vite communities
+- All contributors to open-source emulation.
