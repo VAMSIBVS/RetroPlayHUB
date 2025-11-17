@@ -72,7 +72,6 @@ Built with **React**, **Vite**, and powered by **RetroArch WebAssembly Cores** f
 - **Vamsi Boddikurapati**  
   *Contributed to UI/UX design direction, feature planning, and overall concept improvements.*  
 
-Your inputs helped shape the user experience, interface layout, and creative vision of the platform.
 
 ---
 
